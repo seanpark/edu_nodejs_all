@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 nunjucks.configure('templates', {
-    autoescape : true ,
+    autoescape : true ,  // true : XSS, 태그 등 파싱되지 않도록 처리
     express : app
 });
 
